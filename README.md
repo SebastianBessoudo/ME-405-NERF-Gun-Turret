@@ -1,2 +1,8 @@
 # ME-405-NERF-Gun-Turret
 Calpoly ME 405 Class term project in building a NERF gun turret that can auto-fire on a target
+## Authors:
+Sebastian Bessoudo, Nathaniel Davis
+## Introduction
+The goal for this project is to design an autonomous NERF gun turret that detects and tracks a target and fires a projectile. For the tournament, the launcher must turn 180 degrees with a motor and align itself using an infrared camera to face and hit the target within 10 seconds.  There must also be an emergency shutdown button that can be pushed or a red exposed wire that can be pulled  to stop the automation of the turret at any time. 
+## Hardware Design
+Our design comprises four wooden blocks supporting a slender 3D-printed component below a Lazy Susan. This Susan is linked to a laser-cut wooden piece equipped with a rail attachment for the NERF gun and an additional compartment designed to house the servo for trigger firing. The underside of the 3D-printed component securely fastens the front section of a DC motor (37d 50-70 encoder), while its tip connects to the laser-cut wooden piece, facilitating rotation of the upper system via the Lazy Susan mechanism. The rail attachment accommodates the NERF gun and also features a dedicated compartment for a torque servo motor positioned at a higher level to engage the trigger mechanism. Rubber bands are employed to secure all components in place to prevent the servo motor from dislodging. The wooden blocks, 3D-printed pieces, and the lower section of the Lazy Susan are firmly fastened together with screws, while the upper portion is assembled using nuts and bolts for added stability. Additionally, an 'L'-shaped metal prop away from the assembly to support the infrared camera in place.
