@@ -25,7 +25,10 @@ from mlx90640.calibration import NUM_ROWS, NUM_COLS, IMAGE_SIZE, TEMP_K
 from mlx90640.image import ChessPattern, InterleavedPattern
 
 
-def task1_mm(shares):     
+def task1_mm(shares):
+    """!
+    mastermind of main.py
+    """
     S0_INIT = 0
     S1_BUTTON = 1 
     S2_TURN = 2
@@ -106,7 +109,7 @@ def task1_mm(shares):
         
 def task2_motorcontrol(shares):
     """!
-    motor controller that constantly attmepts to
+    motor controller that constantly attempts to
     reach the setpoint set in the intertask variable "motor_setpoint."
     """
     S0_INIT = 0
