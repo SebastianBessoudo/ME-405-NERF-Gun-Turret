@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ME 405 Term Project: src/main.py File Reference</title>
+<title>ME-405-NERF-Gun-Turret: src/main.py File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">ME 405 Term Project
+   <div id="projectname">ME-405-NERF-Gun-Turret
    </div>
   </td>
  </tr>
@@ -103,16 +103,16 @@ $(function(){initNavTree('main_8py.html',''); initResizable(); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab360a11f6bf7e0cbac917b4d2e422e91" id="r_ab360a11f6bf7e0cbac917b4d2e422e91"><td class="memItemLeft" align="right" valign="top"><a id="ab360a11f6bf7e0cbac917b4d2e422e91" name="ab360a11f6bf7e0cbac917b4d2e422e91"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>main.task1_mm</b> (shares)</td></tr>
+<tr class="memitem:ab360a11f6bf7e0cbac917b4d2e422e91" id="r_ab360a11f6bf7e0cbac917b4d2e422e91"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab360a11f6bf7e0cbac917b4d2e422e91">main.task1_mm</a> (shares)</td></tr>
+<tr class="memdesc:ab360a11f6bf7e0cbac917b4d2e422e91"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mastermind of <a class="el" href="main_8py.html" title="Term Project of Nathaniel Davis and Sebastian Bessoudo.">main.py</a> that instructs the process of what all the electronics are supposed to do.  <br /></td></tr>
 <tr class="separator:ab360a11f6bf7e0cbac917b4d2e422e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04dca862672db1106c56761401a0de28" id="r_a04dca862672db1106c56761401a0de28"><td class="memItemLeft" align="right" valign="top"><a id="a04dca862672db1106c56761401a0de28" name="a04dca862672db1106c56761401a0de28"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>main.task2_motorcontrol</b> (shares)</td></tr>
-<tr class="memdesc:a04dca862672db1106c56761401a0de28"><td class="mdescLeft">&#160;</td><td class="mdescRight">motor controller that constantly attmepts to reach the setpoint set in the intertask variable "motor_setpoint." <br /></td></tr>
+<tr class="memdesc:a04dca862672db1106c56761401a0de28"><td class="mdescLeft">&#160;</td><td class="mdescRight">This task uses the motor controller that constantly attempts to reach the setpoint set in the intertask variable "motor_setpoint". <br /></td></tr>
 <tr class="separator:a04dca862672db1106c56761401a0de28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3df0baa2e0571edb53b29bddc04ba304" id="r_a3df0baa2e0571edb53b29bddc04ba304"><td class="memItemLeft" align="right" valign="top"><a id="a3df0baa2e0571edb53b29bddc04ba304" name="a3df0baa2e0571edb53b29bddc04ba304"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>main.task3_camera</b> (shares)</td></tr>
-<tr class="memdesc:a3df0baa2e0571edb53b29bddc04ba304"><td class="mdescLeft">&#160;</td><td class="mdescRight">constantly updates the intertask variable "ir_angle" with an angle of greatest heat signature. <br /></td></tr>
+<tr class="memdesc:a3df0baa2e0571edb53b29bddc04ba304"><td class="mdescLeft">&#160;</td><td class="mdescRight">This task constantly updates the intertask variable "ir_angle" with an angle of greatest heat signature. <br /></td></tr>
 <tr class="separator:a3df0baa2e0571edb53b29bddc04ba304"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -124,7 +124,7 @@ Variables</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>main.motor_setpoint</b> = task_share.Queue('l', 1, thread_protect=True, overwrite=True, name=&quot;Motor Setpoint&quot;)</td></tr>
 <tr class="separator:a3bb1e1d87f8d0b92ffae2b0e5322e252"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4b8f4290f8d32e70654f6deb864787f" id="r_af4b8f4290f8d32e70654f6deb864787f"><td class="memItemLeft" align="right" valign="top"><a id="af4b8f4290f8d32e70654f6deb864787f" name="af4b8f4290f8d32e70654f6deb864787f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>main.task1</b> = cotask.Task(task1_mm, name=&quot;Mastermind&quot;, priority=2, period=20, profile=True, trace=False, shares=(ir_angle, motor_setpoint))</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>main.task1</b> = cotask.Task(<a class="el" href="#ab360a11f6bf7e0cbac917b4d2e422e91">task1_mm</a>, name=&quot;Mastermind&quot;, priority=2, period=20, profile=True, trace=False, shares=(ir_angle, motor_setpoint))</td></tr>
 <tr class="separator:af4b8f4290f8d32e70654f6deb864787f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99d189b8f9eb3784cf7d4e5c3241b562" id="r_a99d189b8f9eb3784cf7d4e5c3241b562"><td class="memItemLeft" align="right" valign="top"><a id="a99d189b8f9eb3784cf7d4e5c3241b562" name="a99d189b8f9eb3784cf7d4e5c3241b562"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>main.task2</b> = cotask.Task(<a class="el" href="#a04dca862672db1106c56761401a0de28">task2_motorcontrol</a>, name=&quot;Motor Control&quot;, priority=3, period=10, profile=True, trace=False, shares=(ir_angle, motor_setpoint))</td></tr>
@@ -135,11 +135,32 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Term Project of Nathaniel Davis and Sebastian Bessoudo. </p>
-<p>When the blue button on the Nucleo is pressed, start the firing process of turning around and firing </p><dl class="section author"><dt>Author</dt><dd>Nathaniel Davis </dd>
+<p>When the blue button on the Nucleo is pressed, its start the firing process of turning around 180 degrees, aligning itself using an infrared camera, and fires a projectile towards the intended target </p><dl class="section author"><dt>Author</dt><dd>Nathaniel Davis </dd>
 <dd>
 Sebastian Bessoudo </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>3-12-24 </dd></dl>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="ab360a11f6bf7e0cbac917b4d2e422e91" name="ab360a11f6bf7e0cbac917b4d2e422e91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab360a11f6bf7e0cbac917b4d2e422e91">&#9670;&#160;</a></span>task1_mm()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">main.task1_mm </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>shares</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The mastermind of <a class="el" href="main_8py.html" title="Term Project of Nathaniel Davis and Sebastian Bessoudo.">main.py</a> that instructs the process of what all the electronics are supposed to do. </p>
+<p>Uses the intertask variables ir_angle and motor_setpoint to cotask with task2_motorcontrol and task3_camera. </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
