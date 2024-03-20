@@ -1,7 +1,8 @@
 """! @file main.py
 Term Project of Nathaniel Davis and Sebastian Bessoudo.
-When the blue button on the Nucleo is pressed, start the firing process
-of turning around and firing
+When the blue button on the Nucleo is pressed, its start the firing process
+of turning around 180 degrees, aligning itself using an infrared camera,
+and fires a projectile towards the intended target
 @author Nathaniel Davis
 @author Sebastian Bessoudo
 @date 3-12-24
@@ -27,7 +28,9 @@ from mlx90640.image import ChessPattern, InterleavedPattern
 
 def task1_mm(shares):
     """!
-    mastermind of main.py
+    The mastermind of main.py that instructs the process of what all the electronics are supposed to do.
+    Uses the intertask variables ir_angle and motor_setpoint to cotask with task2_motorcontrol and
+    task3_camera.
     """
     S0_INIT = 0
     S1_BUTTON = 1 
@@ -109,8 +112,8 @@ def task1_mm(shares):
         
 def task2_motorcontrol(shares):
     """!
-    motor controller that constantly attempts to
-    reach the setpoint set in the intertask variable "motor_setpoint."
+    This task uses the motor controller that constantly attempts to
+    reach the setpoint set in the intertask variable "motor_setpoint".
     """
     S0_INIT = 0
     S1_UPDATE_MOTOR = 1
@@ -155,7 +158,7 @@ def task2_motorcontrol(shares):
         
 def task3_camera(shares):
     """!
-    constantly updates the intertask variable "ir_angle"
+    This task constantly updates the intertask variable "ir_angle"
     with an angle of greatest heat signature.
     """
     S0_INIT = 0

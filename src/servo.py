@@ -9,7 +9,7 @@ import pyb
 
 class Servo:
     """!
-    This class implements a servo controller
+    This class implements a servo controller to move to its designated setpoint and stop
     """
     def __init__(self, servpin, timer, ch):
         """
