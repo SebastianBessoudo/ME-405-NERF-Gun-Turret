@@ -19,8 +19,14 @@ The mastermind task in charge of running the main code instructs what the turret
 The motor control task uses the intertask variable motor_setpoint to have the motor rotate in a certain direction and setpoint. It is used for moving the motor in the phase of turning the turret 180 degrees and its alignment toward the target. 
 
 The camera task takes a snapshot from an infrared camera and prints a CSV image that shows numbers based on the intensity of the heat signature. It also reads the CSV image and computes ir_angle for the direction of the highest intensity (or numbers) for the alignment of the turret.
+### Task Diagram
+![taskdiagram](https://github.com/SebastianBessoudo/ME-405-NERF-Gun-Turret/assets/158110649/ccd11dd6-943a-4f77-bc5b-dc15c86bd444)
+### FSM for Mastermind
+![state_diagram](https://github.com/SebastianBessoudo/ME-405-NERF-Gun-Turret/assets/158110649/51519e25-21d7-4620-9ed4-c52c9973c1d0)
+### FSM for task 2 and task 3
+![state_diagram1](https://github.com/SebastianBessoudo/ME-405-NERF-Gun-Turret/assets/158110649/8d7a11e3-e27d-4139-a5a5-2679a773ea87)
 
-See a full description of our software and FSM and Task Diagram in the link to our repository: [ Github Page](https://sebastianbessoudo.github.io/ME-405-NERF-Gun-Turret/)
+See a full description of our software in the link to our repository: [ Github Page](https://sebastianbessoudo.github.io/ME-405-NERF-Gun-Turret/)
 ## Testing
 Each test served as a preparatory phase for the final design. Initially, our focus was on testing the motor's ability to rotate to the designated setpoint upon button activation. We verified this by leveraging our encoder class to provide precise motor position feedback.
 
